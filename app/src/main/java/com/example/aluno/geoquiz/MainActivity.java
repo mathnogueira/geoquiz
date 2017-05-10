@@ -41,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
         validarResposta(false);
     }
 
+    public void proximaPergunta(View view) {
+        carregarProximaPergunta();
+    }
+
     private void validarResposta(boolean resposta) {
         String feedback;
         if (service.ValidateQuestion(currentQuestion, resposta)) {
