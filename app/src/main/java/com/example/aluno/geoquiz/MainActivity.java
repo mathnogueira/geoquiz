@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initComponents() {
-        campoPergunta = (TextView) findViewById(R.id.perguntaTextView);
+        // TODO: Guardar a service no bundle para não perder os dados ao rotacionar a tela.
+	campoPergunta = (TextView) findViewById(R.id.perguntaTextView);
         feedbackService = new ToastFeedbackService(this);
         service = new QuizService();
     }
